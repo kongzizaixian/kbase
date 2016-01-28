@@ -317,4 +317,11 @@
 		reg = <0x0 0x000000e4 0x0 0x10000>;
 	};
 
+	uart_1: uart@02f8 {
+		compatible = "hisilicon,16550-lpc-uart";
+		reg = <0 0x02f8 0x0 0x100>;
+		clocks = <&refclk18461mhz>;
+		clock-names = "clk";
+		reg-shift = <0>;
+	};
 };
