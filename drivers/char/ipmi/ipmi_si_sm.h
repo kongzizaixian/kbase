@@ -139,3 +139,8 @@ extern const struct si_sm_handlers kcs_smi_handlers;
 extern const struct si_sm_handlers smic_smi_handlers;
 extern const struct si_sm_handlers bt_smi_handlers;
 
+#ifdef CONFIG_HISI_LPC
+extern int lpc_io_read_byte(unsigned int addr);
+extern int lpc_io_write_byte(unsigned char value, unsigned int addr);
+#endif
+
